@@ -21,8 +21,8 @@ if (hacker1.length > hacker2.length) {
 } else if (hacker1.length < hacker2.length) {
   console.log(
     'The navigator got the longest name, it has ' +
-      hacker2.length +
-      'characters'
+    hacker2.length +
+    'characters'
   );
 } else {
   //wow, you both got equally long names, XX characters!!
