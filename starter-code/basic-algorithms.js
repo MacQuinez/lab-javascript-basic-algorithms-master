@@ -94,4 +94,4 @@ function checkPalindrom(str) {
       .join('')
   );
 }
-checkPalindrom('andna');
+checkPalindrom('amor roma');
