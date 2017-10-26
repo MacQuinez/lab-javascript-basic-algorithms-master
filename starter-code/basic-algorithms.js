@@ -84,7 +84,9 @@ for (var i = 0; i < wordsString.length; i++) {
   }
 }
 console.log(counter);
+//9. Ask the user for a new string and check if it's a [Palindrome]
 
+var str = prompt('Tell me a word and I´ll check if it is a Palindrome');
 function checkPalindrom(str) {
   return (
     str ==
@@ -94,4 +96,4 @@ function checkPalindrom(str) {
       .join('')
   );
 }
-checkPalindrom('amor roma');
+checkPalindrom(str);
