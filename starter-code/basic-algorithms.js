@@ -36,17 +36,51 @@ if (hacker1.length > hacker2.length) {
 var acumulator = '';
 
 for (var i = 0; i < hacker1.length; i++) {
-  acumulator = acumulator + hacker1[i].toUpperCase() + ' ';
+  acumulator += hacker1[i].toUpperCase() + ' ';
 }
 console.log(acumulator);
 
 //7.Print all the characters of the navigator's name, in reverse order. ie. "nhoJ"
 
-var acumulator = '';
-
-for (var i = 0; i < hacker1.length; i--) {
-  acumulator = acumulator + hacker1[i] + ' ';
+var acumulatorReverse = ' ';
+for (var i = hacker2.length; i >= 0; i--) {
+  acumulatorReverse += hacker2[i];
 }
-console.log(acumulator);
+console.log(acumulatorReverse);
 
-// Lorem ipsum generator
+//Depending on the lexicographic order of the strings, print:
+
+//The driver's name goes first
+//Yo, the navigator goes first definitely
+//What?! You both got the same name?
+
+if (hacker1 > hacker2) {
+  console.log('The driver`s name goes first');
+} else if (hacker1 < hacker2) {
+  console.log('The navigator goes first definitely');
+} else {
+  console.log('What?! You both got the same name?');
+}
+
+// Lorem ipsum generato
+//Go to lorem ipsum generator and:
+
+//Generate 3 parragraphs. Store the text in a String
+
+var string =
+  'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa mollitia vero, est consectetur voluptatum beatae molestias recusandae fugiat maiores dolor officiis deleniti magni placeat, repudiandae, rem nesciunt. Itaque, nihil! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa mollitia vero, est consectetur voluptatum beatae molestias recusandae fugiat maiores dolor officiis deleniti magni placeat, repudiandae, rem nesciunt. Itaque, nihil! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa mollitia vero, est consectetur voluptatum beatae molestias recusandae fugiat maiores dolor officiis deleniti magni placeat, repudiandae, rem nesciunt. Itaque, nihil!';
+
+//Make your program count the number of words in the string
+
+var wordsString = string.split(' ');
+console.log(wordsString.length);
+
+//Make your program count the number of times the latin word et appears
+
+counter = 0;
+for (var i = 0; i < wordsString.length; i++) {
+  if (wordsString[i] === 'est') {
+    counter++;
+  }
+}
+console.log(counter);
